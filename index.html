@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Keratins Perfect</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#faf7fb;
+color:#333;
+overflow-x:hidden;
+}
+
+/*======================
+MENÚ
+=======================*/
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:white;
+box-shadow:0 3px 12px rgba(0,0,0,.12);
+z-index:999;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+}
+
+.logoTexto{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logoTexto img{
+width:65px;
+height:65px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logoTexto h2{
+color:#b040b6;
+font-size:28px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+font-weight:bold;
+color:#444;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#b040b6;
+}
+
+/*======================
+PORTADA
+=======================*/
+
+.hero{
+
+padding-top:130px;
+
+min-height:100vh;
+
+background:linear-gradient(135deg,#f3b8e7,#dba6ff);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.heroBox{
+
+width:90%;
+
+max-width:1200px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+align-items:center;
+
+gap:50px;
+
+}
+
+.hero img{
+
+width:100%;
+
+max-width:400px;
+
+margin:auto;
+
+display:block;
+
+border-radius:30px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+animation:flotar 3s ease-in-out infinite;
+
+}
+
+@keyframes flotar{
+
+0%{transform:translateY(0);}
+
+50%{transform:translateY(-12px);}
+
+100%{transform:translateY(0);}
+
+}
+
+.heroTexto h1{
+
+font-size:55px;
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+.heroTexto p{
+
+font-size:21px;
+
+color:white;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+}
+
+.boton{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:white;
+
+color:#b040b6;
+
+font-weight:bold;
+
+text-decoration:none;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+.boton:hover{
+
+transform:scale(1.06);
+
+}
+
+/*======================
+SECCIONES
+=======================*/
+
+section{
+
+padding:90px 8%;
+
+}
+
+.titulo{
+
+text-align:center;
+
+font-size:40px;
+
+color:#b040b6;
+
+margin-bottom:45px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:20px;
+
+padding:35px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+margin-bottom:30px;
+
+}
+
+.card p{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+/*======================
+VALORES
+=======================*/
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+.valor{
+
+background:white;
+
+padding:25px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.valor:hover{
+
+transform:translateY(-8px);
+
+}
+
+.valor h3{
+
+color:#b040b6;
+
+margin-bottom:15px;
+
+}
+
+/*======================
+ORGANIGRAMA
+=======================*/
+
+.organigrama{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:25px;
+
+}
+
+.caja{
+
+background:white;
+
+padding:18px 35px;
+
+border-radius:15px;
+
+box-shadow:0 6px 18px rgba(0,0,0,.1);
+
+font-weight:bold;
+
+}
+
+.linea{
+
+width:3px;
+
+height:35px;
+
+background:#b040b6;
+
+}
+
+.filas{
+
+display:flex;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+/*======================
+CLIENTES
+=======================*/
+
+.clientes{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.clientes h3{
+
+font-size:30px;
+
+color:#b040b6;
+
+margin-bottom:20px;
+
+}
+
+.clientes p{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+/*======================
+CONTACTO
+=======================*/
+
+.contacto{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.info{
+
+background:white;
+
+padding:25px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.info h3{
+
+margin-bottom:15px;
+
+color:#b040b6;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:25px;
+
+}
+
+th{
+
+background:#b040b6;
+
+color:white;
+
+padding:15px;
+
+}
+
+td{
+
+padding:15px;
+
+border:1px solid #ddd;
+
+text-align:center;
+
+}
+
+tr:nth-child(even){
+
+background:#faf4fc;
+
+}
+
+/*======================
+WHATSAPP
+=======================*/
+
+.whatsapp{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:34px;
+
+text-decoration:none;
+
+color:white;
+
+box-shadow:0 5px 18px rgba(0,0,0,.3);
+
+transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.12);
+
+}
+
+footer{
+
+background:#b040b6;
+
+color:white;
+
+text-align:center;
+
+padding:30px;
+
+margin-top:40px;
+
+}
+
+@media(max-width:800px){
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.heroTexto h1{
+
+font-size:38px;
+
+}
+
+.heroTexto p{
+
+font-size:18px;
+
+}
+
+.titulo{
+
+font-size:32px;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logoTexto">
+
+<img src="logo.png">
+
+<h2>Keratins Perfect</h2>
+
+</div>
+
+<ul>
+
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#valores">Valores</a></li>
+<li><a href="#organigrama">Organigrama</a></li>
+<li><a href="#clientes">Clientes</a></li>
+<li><a href="#contacto">Contacto</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" id="inicio">
+
+<div class="heroBox">
+
+<img src="logo.png">
+
+<div class="heroTexto">
+
+<h1>Keratins Perfect</h1>
+
+<p>
+Especialistas en productos capilares de alta calidad, elaborados para brindar cuidado, belleza y confianza a nuestros clientes.
+</p>
+
+<a href="#contacto" class="boton">
+Contáctanos
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section id="nosotros">
+
+<h2 class="titulo">Sobre Nosotros</h2>
+
+<div class="card">
+
+<p>
+
+<b>Keratins Perfect</b> es una empresa comprometida con el bienestar y el cuidado capilar. Nuestro propósito es ofrecer productos confiables, seguros y de excelente calidad para ayudar a nuestros clientes a mantener un cabello saludable, fuerte y brillante.
+
+Trabajamos con responsabilidad, dedicación y profesionalismo para brindar una experiencia de compra satisfactoria, ofreciendo siempre una atención cercana y productos que cumplen con altos estándares de calidad.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Nuestra Misión</h2>
+
+<div class="card">
+
+<p>
+
+Ofrecer productos capilares de alta calidad, seguros y accesibles que ayuden a mejorar el cabello, brindando confianza y satisfacción a nuestros clientes mediante un servicio cercano y profesional.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Nuestra Visión</h2>
+
+<div class="card">
+
+<p>
+
+Ser una empresa reconocida a nivel nacional por la calidad de nuestros productos capilares, destacándonos por la innovación, la atención al cliente y el compromiso con el bienestar de quienes confían en Keratins Perfect.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Objetivo General</h2>
+
+<div class="card">
+
+<p>
+
+Brindar soluciones para el cuidado del cabello mediante productos capilares de excelente calidad, ofreciendo confianza, seguridad y satisfacción a nuestros clientes.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Objetivos Específicos</h2>
+
+<div class="grid">
+
+<div class="valor">
+
+<h3>✔ Calidad</h3>
+
+<p>
+
+Garantizar productos seguros y de excelente calidad para el cuidado capilar.
+
+</p>
+
+</div>
+
+<div class="valor">
+
+<h3>✔ Atención</h3>
+
+<p>
+
+Ofrecer una atención amable, cercana y profesional durante todo el proceso de compra.
+
+</p>
+
+</div>
+
+<div class="valor">
+
+<h3>✔ Innovación</h3>
+
+<p>
+
+Mejorar continuamente nuestros productos para satisfacer las necesidades de los clientes.
+
+</p>
+
+</div>
+
+<div class="valor">
+
+<h3>✔ Confianza</h3>
+
+<p>
+
+Construir relaciones duraderas basadas en la honestidad y la satisfacción del cliente.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="valores">
+
+<h2 class="titulo">Nuestros Valores</h2>
+
+<div class="grid">
+
+<div class="valor">
+
+<h3>💜 Calidad</h3>
+
+<p>
+
+Trabajamos para ofrecer productos que realmente cuiden y protejan el cabello.
+
+</p>
+
+</div>
+
+<div class="valor">
+
+<h3>🤝 Compromiso</h3>
+
+<p>
+
+Nos esforzamos por cumplir con las expectativas de cada cliente.
+
+</p>
+
+</div>
+
+<div class="valor">
+
+<h3>⭐ Responsabilidad</h3>
+
+<p>
+
+Actuamos con ética, respeto y profesionalismo.
+
+</p>
+
+</div>
+
+<div class="valor">
+
+<h3>🌸 Innovación</h3>
+
+<p>
+
+Buscamos mejorar constantemente nuestros productos y procesos.
+
+</p>
+
+</div>
+
+<div class="valor">
+
+<h3>😊 Confianza</h3>
+
+<p>
+
+La satisfacción del cliente es nuestra mayor prioridad.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="organigrama">
+
+<h2 class="titulo">Organigrama</h2>
+
+<div class="organigrama">
+
+<div class="caja">
+
+Gerente General
+
+</div>
+
+<div class="linea"></div>
+
+<div class="filas">
+
+<div class="caja">
+
+Área Administrativa
+
+</div>
+
+<div class="caja">
+
+Área Comercial
+
+</div>
+
+<div class="caja">
+
+Área de Producción
+
+</div>
+
+</div>
+
+<div class="linea"></div>
+
+<div class="filas">
+
+<div class="caja">
+
+Ventas
+
+</div>
+
+<div class="caja">
+
+Atención al Cliente
+
+</div>
+
+<div class="caja">
+
+Distribución
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="clientes">
+
+<h2 class="titulo">
+
+Nuestros Clientes
+
+</h2>
+
+<div class="clientes">
+
+<h3>
+
+Comprometidos con nuestros clientes
+
+</h3>
+
+<p>
+
+En Keratins Perfect trabajamos pensando en cada persona que confía en nuestros productos. Nuestro compromiso es ofrecer soluciones para el cuidado capilar con calidad, responsabilidad y un servicio cercano, buscando siempre brindar una experiencia satisfactoria.
+
+</p>
+
+<br>
+
+<a href="#contacto" class="boton">
+
+Contáctanos
+
+</a>
+
+</div>
+
+</section>
+<section id="contacto">
+
+<h2 class="titulo">Contáctanos</h2>
+
+<div class="contacto">
+
+<div class="info">
+
+<h3>📞 Teléfono</h3>
+
+<p><strong>311 285 8643</strong></p>
+
+</div>
+
+<div class="info">
+
+<h3>📧 Correo</h3>
+
+<p>keratinsperfect@gmail.com</p>
+
+</div>
+
+<div class="info">
+
+<h3>📍 Dirección</h3>
+
+<p>Calle 73 Sur #27-08</p>
+
+</div>
+
+</div>
+
+<div class="card" style="margin-top:40px;">
+
+<h2 style="text-align:center;color:#b040b6;margin-bottom:25px;">
+
+Horario de Atención
+
+</h2>
+
+<table>
+
+<tr>
+
+<th>Día</th>
+
+<th>Horario</th>
+
+</tr>
+
+<tr>
+
+<td>Lunes</td>
+
+<td>7:00 a. m. - 3:48 p. m.</td>
+
+</tr>
+
+<tr>
+
+<td>Martes</td>
+
+<td>7:00 a. m. - 3:48 p. m.</td>
+
+</tr>
+
+<tr>
+
+<td>Miércoles</td>
+
+<td>7:00 a. m. - 3:48 p. m.</td>
+
+</tr>
+
+<tr>
+
+<td>Jueves</td>
+
+<td>7:00 a. m. - 3:48 p. m.</td>
+
+</tr>
+
+<tr>
+
+<td>Viernes</td>
+
+<td>7:00 a. m. - 3:48 p. m.</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card" style="margin-top:40px;">
+
+<h2 style="text-align:center;color:#b040b6;margin-bottom:25px;">
+
+Nuestra Ubicación
+
+</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Calle+73+Sur+27-08+Bogota&output=embed"
+width="100%"
+height="350"
+style="border:0;border-radius:15px;"
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+<a
+class="whatsapp"
+href="https://wa.me/573112858643"
+target="_blank"
+title="Escríbenos por WhatsApp">
+
+💬
+
+</a>
+
+<footer>
+
+<h2>Keratins Perfect</h2>
+
+<br>
+
+<p>
+
+Productos capilares de alta calidad para el cuidado de tu cabello.
+
+</p>
+
+<br>
+
+<p>
+
+📞 311 285 8643
+
+</p>
+
+<p>
+
+📧 keratinsperfect@gmail.com
+
+</p>
+
+<p>
+
+📍 Calle 73 Sur #27-08
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 Keratins Perfect - Todos los derechos reservados.
+
+</p>
+
+</footer>
+
+<script>
+
+/* Animación al aparecer */
+
+const elementos=document.querySelectorAll("section,.valor,.card,.clientes,.info,.caja");
+
+const mostrar=()=>{
+
+elementos.forEach(e=>{
+
+const pos=e.getBoundingClientRect().top;
+
+const pantalla=window.innerHeight-100;
+
+if(pos<pantalla){
+
+e.style.opacity="1";
+
+e.style.transform="translateY(0)";
+
+}
+
+});
+
+}
+
+elementos.forEach(e=>{
+
+e.style.opacity="0";
+
+e.style.transform="translateY(40px)";
+
+e.style.transition="1s";
+
+});
+
+window.addEventListener("scroll",mostrar);
+
+mostrar();
+
+/* Menú cambia de color */
+
+window.addEventListener("scroll",()=>{
+
+const header=document.querySelector("header");
+
+if(window.scrollY>50){
+
+header.style.background="#b040b6";
+
+header.style.transition=".4s";
+
+document.querySelectorAll("nav a").forEach(a=>{
+
+a.style.color="white";
+
+});
+
+document.querySelector(".logoTexto h2").style.color="white";
+
+}else{
+
+header.style.background="white";
+
+document.querySelectorAll("nav a").forEach(a=>{
+
+a.style.color="#444";
+
+});
+
+document.querySelector(".logoTexto h2").style.color="#b040b6";
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
